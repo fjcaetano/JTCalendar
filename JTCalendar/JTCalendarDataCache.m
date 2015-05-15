@@ -27,6 +27,8 @@
     
     dateFormatter = [NSDateFormatter new];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    dateFormatter.locale = self.calendarManager.calendarAppearance.locale;
+    
     events = [NSMutableDictionary new];
     
     return self;

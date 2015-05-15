@@ -19,6 +19,8 @@ typedef NS_ENUM(NSInteger, JTCalendarWeekDayFormat) {
 
 typedef NSString *(^JTCalendarMonthBlock)(NSDate *date, JTCalendar *jt_calendar);
 
+@property (nonatomic, strong) NSLocale *locale;
+
 /**
  *	A Boolean value indicating whether the calendar should show a month or a week.
  *
